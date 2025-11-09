@@ -28,7 +28,7 @@ pipeline{
         }
         stage("Deploy"){
             steps{
-                sh "docker run -d --name node-app-container -p 3000:3000 preranakarande/node-app:latest"
+                sh "docker run -d --name node-app-container"
             }
         }
     }
