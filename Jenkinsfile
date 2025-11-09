@@ -12,6 +12,7 @@ pipeline{
             steps{
                 echo "Code Build Stage"
                 sh "docker build -t node-app ."
+                echo "updated by Akshay"
             }
         }
         stage("Push To DockerHub"){
